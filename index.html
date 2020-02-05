@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7d89f181f6.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        ul li {
+            list-style-type: none;
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+
+        .wrap {
+            width: 90%;
+            height: 100vh;
+            padding: 1%;
+            margin: auto;
+        }
+
+        #header {
+            width: 100%;
+            height: 20%;
+        }
+
+        #headlink {
+            width: 100%;
+            height: 5%;
+            background-color: slategrey;
+            margin-top: 1%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .main {
+            width: 100%;
+            height: 60%;
+            margin-top: 1%;
+        }
+
+        #left {
+            width: 13%;
+            height: 100%;
+            float: left;
+        }
+
+        #right {
+            width: 20%;
+            height: 100%;
+            background-color: slategrey;
+            float: left;
+        }
+
+        #content {
+            width: 65%;
+            height: 100%;
+            float: left;
+            margin: 0 1% 0 1%;
+        }
+
+        #footer {
+            width: 100%;
+            height: 7%;
+            background-color: slategrey;
+            margin-top: 1%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 24%;
+            height: 100%;
+            background-color: slategrey;
+            position: relative;
+            float: left;
+        }
+
+        .logo p,
+        .banner p {
+            font-size: 2.5em;
+            font-weight: bold;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .banner {
+            width: 75%;
+            height: 100%;
+            margin-left: 1%;
+            background: slategrey;
+            float: left;
+            position: relative;
+        }
+
+        .navbar {
+            width: 30%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar ul li {
+            float: left;
+            margin-left: 15px;
+        }
+
+        .search {
+            width: fit-content;
+            height: 85%;
+            display: flex;
+            align-items: center;
+            background-color: silver;
+            border-radius: 25px;
+            padding: 0 15px 0 15px;
+            margin-right: 20px;
+        }
+
+        .search input[type="text"] {
+            margin-left: 5px;
+        }
+
+        .search i {
+            color: white;
+        }
+
+        .sidenav {
+            width: 100%;
+            height: 50%;
+            background-color: slategrey;
+        }
+
+        .sidenav ul {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .blank {
+            width: 100%;
+            height: 47%;
+            background-color: slategrey;
+            margin-top: 7%;
+        }
+
+        .maincontent {
+            width: 100%;
+            height: 25%;
+        }
+
+        #hotnews,
+        #photo {
+            width: 49%;
+            height: 100%;
+            background-color: slategrey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: left;
+        }
+
+        #photo {
+            margin-left: 2%;
+        }
+
+        .news {
+            width: 100%;
+            height: 72%;
+            margin-top: 1.4%;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 5% 2%;
+        }
+
+        .new {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: slategrey;
+        }
+
+        .license {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div id="header">
+            <div class="logo">
+                <p>Logo</p>
+            </div>
+            <div class="banner">
+                <p>Banner</p>
+            </div>
+        </div>
+        <div id="headlink">
+            <div class="navbar">
+                <ul>
+                    <li>Home</li>
+                    <li>Students</li>
+                    <li>Courses</li>
+                    <li>About us</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+            <div class="search">
+                <i class="fas fa-search"></i>
+                <input type="text">
+            </div>
+        </div>
+        <div class="main">
+            <div id="left">
+                <div class="sidenav">
+                    <ul>
+                        <li>Introduct</li>
+                        <li>News</li>
+                        <li>Education</li>
+                        <li>Register</li>
+                        <li>Courses</li>
+                    </ul>
+                </div>
+                <div class="blank"></div>
+            </div>
+            <div id="content">
+                <div class="maincontent">
+                    <div id="hotnews">
+                        <p>Hot news</p>
+                    </div>
+                    <div id="photo">
+                        <p>Photo slide</p>
+                    </div>
+                </div>
+                <div class="news">
+                    <div class="new">
+                        <p>New 1</p>
+                    </div>
+                    <div class="new">
+                        <p>New 2</p>
+                    </div>
+                    <div class="new">
+                        <p>New 3</p>
+                    </div>
+                    <div class="new">
+                        <p>New 4</p>
+                    </div>
+                    <div class="new">
+                        <p>New 5</p>
+                    </div>
+                    <div class="new">
+                        <p>New 6</p>
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+
+            </div>
+        </div>
+        <div id="footer">
+            <div class="license">
+                <p>@2012 - TapChiLapTrinh</p>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li>Home</li>
+                    <li>Students</li>
+                    <li>Courses</li>
+                    <li>About us</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
